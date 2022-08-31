@@ -6,7 +6,7 @@ import pandas as pd
 # 初始化数据库连接
 # 按实际情况依次填写MySQL的用户名、密码、IP地址、端口、数据库名
 
-engine = create_engine("mysql+pymysql://{}:{}@{}:{}/{}".format('root', '13896766981', 'localhost', '3306', 'testdb'))
+engine = create_engine("mysql+pymysql://{}:{}@{}:{}/{}".format('root', 'none', 'localhost', '3306', 'testdb'))
 
 # df = pd.read_excel('xiujian.xlsx')
 
