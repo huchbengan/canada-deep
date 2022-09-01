@@ -46,6 +46,8 @@ def write_sql_table(table_name, db_name, df: pd.DataFrame, type='replace'):
     # print('{}{}数据{}成功'.format(table_name, db_name, type))
 
 
-# df = pd.read_excel('浇水分类代表物种ID.xlsx',sheet_name='全物种类群分类ID')
-df = pd.DataFrame([{'uid':1,'groupid':'cwater0002'}])
-write_sql_table(table_name='test_water',db_name='testdb',df=df)
+if __name__=="__main__":
+
+    # df = pd.read_excel('浇水分类代表物种ID.xlsx',sheet_name='全物种类群分类ID')
+    df = pd.DataFrame([{'uid':1,'groupid':'cwater0002'}])
+    write_sql_table(table_name='test_water',db_name='testdb',df=df)
